@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+
+import  React  from "@babel/types";
+import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import '.';
+import axios from 'axios';
+import Layout from './Componet/Layout';
+import Home from "./Pages/Home";
+import './Estilos/App.css'
+import Employe from "./Pages/Employe";
+
+
 
 function App() {
+  const [items, setItems] = useState([]);
+  
+  
+
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/users')
+      .then((response) => {
+        setItems(response.data);
+      })
+      .catch((error) => {
+        console.log('Error fetching data:', error);
+      });
+ }, []);
+
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <BrowserRouter>
+      
+      <Routes>
+
+         <Route index element={<Home/>}>
+      </Route>
+
+      <Route path="/employe/:id" element={<Employe/>}></Route>
+     </Routes>
+      
+        </BrowserRouter>
+    </>
   );
 }
 
