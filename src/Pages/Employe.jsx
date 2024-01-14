@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Header from '../Componet/Header';
 
 const Employe = () => {
  const { id } = useParams();
@@ -20,11 +21,14 @@ const Employe = () => {
  }
 
  return (
+   <>
+   <Header/>
     <div>
       <h1>{product.name}</h1>
       <p>{product.username}</p>
       <p>{product.email}</p>
     </div>
+    </>
  );
 };
 

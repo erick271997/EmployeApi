@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 function ListEmploye({employes}) {
 
 
@@ -13,7 +14,8 @@ function ListEmploye({employes}) {
     return <div>{addressString}</div>;
   };
   return (
-    
+    <>
+   
   <div>
     <Link to={{pathname: `/employe/${employes.id}`}}>
       <h1>{employes.name}</h1>
@@ -30,6 +32,7 @@ function ListEmploye({employes}) {
  
 
   </div>
+  </>
   )
 }
 

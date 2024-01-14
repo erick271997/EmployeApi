@@ -1,43 +1,50 @@
-import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from '../Img/logo3.png'
+import Home from '../Img/home.png'
 
 const Header = () => {
  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
- const toggleMenu = () => {
+ const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
  };
 
- 
-
  return (
-    <>
-    <header className="responsive-header">
-      <div className="header-logo">
-        <Link to="/">Logo</Link>
-      </div>
-      <button className="header-menu-button" onClick={toggleMenu}>
-        {isMenuOpen ? 'Close' : 'Menu'}
+
+    <header className="responsive-header"> 
+    <div className="div-header-home">
+
+   
+   <Link to='/'><img src={Home} className='home' alt="home"></img></Link>
+     </div>
+     <div className="container-header">
+
+
+       <button className="btn-header" onClick={handleMenuToggle}>
+      <img src={logo} className='logo' alt='logo'/>
+      .
       </button>
-      <nav className={`header-menu ${isMenuOpen ? 'open' : ''}`}>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+      {isMenuOpen && (
+        <nav className="nav-header">
+          <ul className="ul-header">
+         
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <a href="/acerca">Acerca de</a>
+            </li>
+            <li>
+              <a href="/contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+       
+      )}
+          </div>
     </header>
-    </>
+ 
  );
 };
 

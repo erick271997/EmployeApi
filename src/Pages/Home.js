@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ListEmploye from '../Componet/ListEmploye';
 import Header from '../Componet/Header';
+import Footer from '../Componet/Footer';
 
 
 
@@ -29,7 +30,7 @@ function Home() {
   <>
   <Header/>
 
-    <div>
+    <div className='div-home-employe'>
       {apidata.map((item, index) => (
         <div key={index}>
           <ListEmploye employes={item}/>
@@ -40,6 +41,7 @@ function Home() {
       ))}
     
     </div>
+    <Footer/>
 
     </>
  );
