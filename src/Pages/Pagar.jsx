@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Componet/Header'
 
 function Pagar() {
   return (
-    <div>Pagar</div>
+    <div>
+      <Header/>
+      
+      Pagar</div>
   )
 }
 

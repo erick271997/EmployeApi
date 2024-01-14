@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+
 import ListEmploye from '../Componet/ListEmploye';
 import Header from '../Componet/Header';
 import Footer from '../Componet/Footer';
@@ -30,6 +30,15 @@ function Home() {
   <>
   <Header/>
 
+
+  <div className="Search">
+ <input className='inpu-Search' type="text"  placeholder='Search'/>
+  <button className='btn-search'>
+            Search
+          </button>
+         
+</div>
+  <br/>
     <div className='div-home-employe'>
       {apidata.map((item, index) => (
         <div key={index}>

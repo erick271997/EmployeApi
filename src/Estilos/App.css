@@ -2,8 +2,8 @@
 .responsive-header{
   background-color:#333;;
   height: 90px;
-  width: 32.2cm;
-  max-width: 33cm;
+  width: 33.3cm;
+  max-width: 33.3cm;
  
 }
 .home{
@@ -18,6 +18,14 @@ position: relative;
 top: -11px;    
 
 }
+
+.inpu-Search{
+  width: 235px;
+  height: 0.6cm;
+  position: absolute;
+  margin-left: 421px;
+  top: 104px;
+}
 .logo{
    
     width: -1.5cm;
@@ -30,7 +38,7 @@ top: -11px;
 .container-header{
 width: 0.5cm;
 height: auto;
-margin-left: 1140px;
+margin-left: 1179px;
 top: -150px;
 position: relative;
 /* background: rgb(216, 18, 0); */
@@ -40,11 +48,13 @@ position: relative;
 
 }
 .nav-header{
-    margin-left: -75px;
+    margin-left: -73px;
     position: relative;
-    top: 23.5px;
-    background-color: rgba(148, 148, 148, 0.831);
+    top: 47.5px;
+    background-color: #333;
     width: 4.0cm;
+    height: 5cm;
+    border-radius: 13px;
 }
 .ul-header{
    list-style: none;
@@ -52,9 +62,129 @@ position: relative;
    position: relative
 
 }
+.ul-Inicio,
+.ul-acerca,
+.ul-cont
+{
+    color: #fff;
+  }
 
+  .Search{
+    background-color: rgb(179, 179, 179);
+    width: 33.3cm;
+    height: 1.5cm;
+  }
+  .btn-search{
+    position: relative;
+    top: 10px;
+    margin-left: 276px;
+    width: 2cm;
+    font-size: 1vw;
+    height: 1cm;
+  }
+  /* Div de home */
 .div-home-employe{
-    background-color: aqua;
+  background-color: aqua;
+    
+}
+.Box-div-limEmployes{
+
+  display: flex;
+  flex-direction: unset;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+}
+.div-id{
+  display: grid;
+  
+
+}
+.p-id{
+ 
+  position: relative;
+    top:3px;
+}
+.img-listaemploye{
+  width: 74px;
+    height: 60px;
+    top: 84px;
+    position: relative;
+    border-radius: 50px;
+  border: #fff solid;
+    margin-left: -68px;
+
+}
+.img-listaemploye-div{
+  position: relative;
+  top: -50px;
+  margin-left: 65px;
+
+
+}
+.h3-name{
+  width: 7cm;
+  font-size: 15px;
+  margin-left: 50px;
+  top: 25px;
+  position: relative;
+}
+.email-employe{
+
+ margin-left: -111px;
+}
+.p-email-employe{
+  position: relative;
+  top: 22px;
+  margin-left: -19px;
+
+}
+.zip-employe{
+
+}
+.web-p-employe{
+  position: relative;
+  top: 21px;
+}
+.zip-p-employe{
+  position: relative;
+  top: 20px;
+}
+.btn-employe-action{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.btn-btn-danger-div{
+  position: relative;
+  top: 53px;
+  margin-left: 36px;
+  
+}
+.btn-btn-danger{
+  width: 41px;
+  height: 35px;
+  position: relative;
+  top: -4px;
+}
+.div-ListEmploye{
+
+    border: red 1px solid;
+    padding: 2px;
+   margin-left: 8px;
+    width: 30cm;
+    height: 5cm;
+
+    
+}
+.btn-btn-primary{
+  position: relative;
+  top: 48px;
+  width: 41px;
+  height: 35px;
+  margin-left: -58px;
 }
 
 

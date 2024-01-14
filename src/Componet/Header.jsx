@@ -13,7 +13,9 @@ const Header = () => {
  return (
 
     <header className="responsive-header"> 
-    <div className="div-header-home">
+
+
+          <div className="div-header-home">
 
    
    <Link to='/'><img src={Home} className='home' alt="home"></img></Link>
@@ -30,19 +32,23 @@ const Header = () => {
           <ul className="ul-header">
          
             <li>
-              <a href="/">Inicio</a>
+              <a className="ul-Inicio" href="/">Inicio</a>
             </li>
             <li>
-              <a href="/acerca">Acerca de</a>
+              <Link className="ul-acerca" to="/acerca">Acerca de</Link>
             </li>
             <li>
-              <a href="/contacto">Contacto</a>
+              <Link className="ul-cont" to={"/pagar"}>Pagar</Link>
             </li>
           </ul>
         </nav>
-       
+        
+        
       )}
-          </div>
+     
+          </div> 
+        
+         
     </header>
  
  );

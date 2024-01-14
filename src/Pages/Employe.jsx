@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Footer from '../Componet/Footer';
 import Header from '../Componet/Header';
 
 const Employe = () => {
@@ -28,6 +29,7 @@ const Employe = () => {
       <p>{product.username}</p>
       <p>{product.email}</p>
     </div>
+    <Footer/>
     </>
  );
 };

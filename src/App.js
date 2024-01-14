@@ -8,6 +8,7 @@ import Layout from './Componet/Layout';
 import Home from "./Pages/Home";
 import './Estilos/App.css'
 import Employe from "./Pages/Employe";
+import Pagar from "./Pages/Pagar";
 
 
 
@@ -38,8 +39,13 @@ function App() {
       </Route>
 
       <Route path="/employe/:id" element={<Employe/>}></Route>
-     </Routes>
-      
+    
+     <Route path="/pagar" element= {<Pagar/>}></Route>
+
+
+
+     
+       </Routes>
         </BrowserRouter>
     </>
   );
