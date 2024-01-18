@@ -1,0 +1,15 @@
+// fetch('https://xsgames.co/randomusers/assets/avatars/male/')
+  // .then((res) => res.json())
+  // .then(json => setApidata2 (json))
+  // .catch(error => console.log('Error fetching image data:', error));
+
+
+  // const firstItem2 = apidata2.find(item => item);
+    // setList2(firstItem2 ? firstItem.name : 'No hay elementos en la lista');
+    
+  
+  // function handleSearch(){
+  //   let filterData;
+  //   if (lista === ''){
+  //     filterData = apidata;
+  //     }else{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Ensayo  from '../Img/imgEnsayo.png'
 import { GoXCircleFill } from "react-icons/go";
@@ -7,6 +7,14 @@ import { GrConfigure } from "react-icons/gr";
 
 
 function ListEmploye({employes}) {
+  const [avata, Setavata] = useState('');
+  
+  useEffect(() => {
+   Setavata(`https://robohash.org/${employes.name}.png`)
+
+
+
+ },);
 
 
 
@@ -22,8 +30,16 @@ function ListEmploye({employes}) {
 
     <div className='img-listaemploye-div'>
       Name
-    <img className='img-listaemploye' src={Ensayo} alt=''/>
-    <h3 className='h3-name'>{employes.name}</h3></div>
+    <img className='img-listaemploye' src={avata} alt=''/>
+    {/* <Link to={{pathname: `/pagar/${employes.id}`}}> */}
+     
+       <h3 className='h3-name'>{employes.name}</h3>
+    {/* </Link> */}
+   
+    </div>
+  
+    {/* <h3 className='h3-name'>{employes.avatar}</h3> */}
+
 
 
     <div className='email-employe'> Email<p className='p-email-employe'>{employes.email} </p></div>
@@ -57,12 +73,11 @@ function ListEmploye({employes}) {
 
       
         </div>
-      
+ 
       
       
       </Link> 
- 
-
+     
 
   </>
   )

@@ -38,6 +38,8 @@ function App() {
          <Route index element={<Home/>}>
       </Route>
 
+      <Route path="/home" element={<Home/>}></Route>
+
       <Route path="/employe/:id" element={<Employe/>}></Route>
     
      <Route path="/pagar" element= {<Pagar/>}></Route>

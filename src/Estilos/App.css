@@ -2,8 +2,8 @@
 .responsive-header{
   background-color:#333;;
   height: 90px;
-  width: 33.3cm;
-  max-width: 33.3cm;
+  width: 33.1cm;
+  max-width: 33cm;
  
 }
 .home{
@@ -84,7 +84,10 @@ position: relative;
   }
   /* Div de home */
 .div-home-employe{
-  background-color: aqua;
+  /* background-color: aqua; */
+
+  top: 48px;
+  position: relative;
     
 }
 .Box-div-limEmployes{
@@ -168,12 +171,13 @@ position: relative;
   height: 35px;
   position: relative;
   top: -4px;
+  background-color: rgb(237, 125, 125);
 }
 .div-ListEmploye{
 
     border: red 1px solid;
     padding: 2px;
-   margin-left: 8px;
+   margin-left: 29px;
     width: 30cm;
     height: 5cm;
 
@@ -185,14 +189,86 @@ position: relative;
   width: 41px;
   height: 35px;
   margin-left: -58px;
+  background-color: rgb(135, 169, 248);
+  border-radius: 10px;
+}
+/* ******** employe************* */
+.employe-div{
+/* background-color: aqua; */
+justify-content: center;
+max-width: 31cm ;
+}
+.div-info{
+  justify-content: center;
+  display: flex;
 }
 
+.employe-div2 {
+  display: flex;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 105px;
+
+    justify-content: space-between;
+    top: -281px;
+    position: relative;
+    padding-left: -33px;
+    border: 2px red solid;
+    background-color: rgb(168, 167, 167);
+}
+
+
+.p{
+ font-size: 20px;
+ color: #fff;
+ text-align: left;
+ line-height: 25px;
+ margin-left: 11px;
+ text-decoration: underline;
+}
+.employe-websaite-p{
+  position: relative;
+}
+.employe-img{
+  width: 400px;
+  height: 400px;
+  margin-left: 4cm;
+}
+.div-employe-info{
+  border: 1px red solid;
+  background-color: rgb(174, 174, 174);
+  margin-left: 610px;
+  width: 8cm;
+    position: relative;
+    top: -320px;
+}
+.Username{
+  background-color: #fff;
+}
+.btn-link{
+  display: inline-block;
+  height: 59px;
+  position: relative;
+  background-color: rgb(152, 177, 239);
+  top: -482px;
+  margin-left: 969px;
+  color: white;
+  padding-top: 0.5em;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn-link:hover{
+  background-color: blueviolet;
+
+}
 
 /* Footer */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
+    position: relative;
+    top: 55px;
   }
   
   .footer-content {
